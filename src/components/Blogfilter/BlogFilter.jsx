@@ -1,6 +1,16 @@
 import { useState } from "react";
 import BlogPost from "../BlogPost/BlogPost";
 import classes from "./BlogFilter.module.css"
+import imp1 from "../../img/blog1.png"
+import imp2 from "../../img/blog2.png"
+import imp3 from "../../img/blog2.png"
+import imp4 from "../../img/blog1.png"
+import imp5 from "../../img/blog2.png"
+import imp6 from "../../img/blog3.png"
+import imp7 from "../../img/blog1.png"
+import imp8 from "../../img/blog2.png"
+import imp9 from "../../img/blog3.png"
+import imp11 from "../../img/blog1.png"
 import { Link } from "react-router-dom";
 
 
@@ -38,55 +48,55 @@ function BlogFilter() {
                 {selectedCategory === "" && (
                     <>
                         <BlogPost
-                            blogImg={import("../../img/blog1.png")}
+                            blogImg={imp1}
                             blogHeading="Best Practices for meditation & relaxation..."
                             blogCopy="Mindfulness meditation originates from Buddhist teachings and is the most popular and researched form of meditation in the West."
                             category="Health"
                         />
                         <BlogPost
-                            blogImg={import("../../img/blog2.png")}
+                            blogImg={imp2}
                             blogHeading="Best Practices for meditation & relaxation..."
                             blogCopy="Mindfulness meditation originates from Buddhist teachings and is the most popular and researched form of meditation in the West."
                             category="Yoga"
                         />
                         <BlogPost
-                            blogImg={import("../../img/blog3.png")}
+                            blogImg={imp3}
                             blogHeading="Best Practices for meditation & relaxation..."
                             blogCopy="Mindfulness meditation originates from Buddhist teachings and is the most popular and researched form of meditation in the West."
                             category="Welness"
                         />
                         <BlogPost
-                            blogImg={import("../../img/blog1.png")}
+                            blogImg={imp4}
                             blogHeading="Best Practices for meditation & relaxation..."
                             blogCopy="Mindfulness meditation originates from Buddhist teachings and is the most popular and researched form of meditation in the West."
                             category="Health"
                         />
                         <BlogPost
-                            blogImg={import("../../img/blog2.png")}
+                            blogImg={imp5}
                             blogHeading="Best Practices for meditation & relaxation..."
                             blogCopy="Mindfulness meditation originates from Buddhist teachings and is the most popular and researched form of meditation in the West."
                             category="Yoga"
                         />
                         <BlogPost
-                            blogImg={import("../../img/blog3.png")}
+                            blogImg={imp6}
                             blogHeading="Best Practices for meditation & relaxation..."
                             blogCopy="Mindfulness meditation originates from Buddhist teachings and is the most popular and researched form of meditation in the West."
                             category="Welness"
                         />
                         <BlogPost
-                            blogImg={import("../../img/blog1.png")}
+                            blogImg={imp7}
                             blogHeading="Best Practices for meditation & relaxation..."
                             blogCopy="Mindfulness meditation originates from Buddhist teachings and is the most popular and researched form of meditation in the West."
                             category="Health"
                         />
                         <BlogPost
-                            blogImg={import("../../img/blog2.png")}
+                            blogImg={imp8}
                             blogHeading="Best Practices for meditation & relaxation..."
                             blogCopy="Mindfulness meditation originates from Buddhist teachings and is the most popular and researched form of meditation in the West."
                             category="Yoga"
                         />
                         <BlogPost
-                            blogImg={import("../../img/blog3.png")}
+                            blogImg={imp9}
                             blogHeading="Best Practices for meditation & relaxation..."
                             blogCopy="Mindfulness meditation originates from Buddhist teachings and is the most popular and researched form of meditation in the West."
                             category="Welness"
@@ -96,7 +106,7 @@ function BlogFilter() {
                 {selectedCategory === "Health" && (
                     <>
                         <BlogPost
-                            blogImg={import("../../img/blog1.png")}
+                            blogImg={imp11}
                             blogHeading="Best Practices for meditation & relaxation..."
                             blogCopy="Mindfulness meditation originates from Buddhist teachings and is the most popular and researched form of meditation in the West."
                             category="Health"
