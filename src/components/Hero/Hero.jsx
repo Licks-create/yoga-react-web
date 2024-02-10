@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import classes from "./Hero.module.css";
 import HeroImg from "../../img/pngegg (1).png";
@@ -8,7 +9,6 @@ import Booking from "../SlotBook/Booking";
 function Hero() {
   const navigate=useNavigate()
   const [isNavOpen, setIsNavOpen] = useState(false);
-  // console.log(localStorage.getItem("user"));
 
   const [showForm, setShowForm] = useState(false);
   const [user, setUser] = useState(null);
