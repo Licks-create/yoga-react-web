@@ -1,0 +1,19 @@
+.parent{
+    background: url("https://i.ibb.co/0cPFjjt/dylan-gillis-YJd-CZba0-TYE-unsplash.jpg") no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+
+    height: 100vh;
+    z-index: -1000;
+}
+.parent::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,.4);
+    backdrop-filter: blur(5px);
+    /* z-index: -200; */
+}

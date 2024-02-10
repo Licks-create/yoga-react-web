@@ -11,7 +11,7 @@ import req7 from "../../img/blog3.png"
 function Blog() {
     return (
         <>
-            <div id="blog" className={classes.blogWrapper}>
+            <div id="blog" className={classes.blogWrapper} >
                 <div className={classes.blogWrapperCopy}>
                   
                     <img src={req3} alt="" className={classes.leafelipseOne} />

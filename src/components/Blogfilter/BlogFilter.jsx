@@ -31,13 +31,15 @@ function BlogFilter() {
 
     return (
         <>
+        <div style={{position:"relative",zIndex:"1000",background:"#fff",height:"100%"}}>
+
         <header className={classes.header}>
         <Link to="/" className={classes.logo}>Elda Health</Link>
         </header>
 <div className={classes.blogFilterMain}>
 
 
-            <div className={classes.blogFilter}>
+            <div className={classes.blogFilter} >
                 <div className={classes.blogFilterCopy}>
                     <h2 onClick={() => handleCategoryClick("")} className={classes.blogFilterCopyh}>Filter</h2>
                     <ul className={classes.blogFilterList}>
@@ -49,7 +51,7 @@ function BlogFilter() {
 
             </div>
 
-            <div className={classes.blogList}>
+            <div className={classes.blogList} >
                 {selectedCategory === "" && (
                     <>
                         <BlogPost
@@ -177,6 +179,8 @@ function BlogFilter() {
                 )}
             </div>
             </div>
+            </div>
+        
         </>
     )
 }
