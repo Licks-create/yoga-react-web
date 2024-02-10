@@ -30,9 +30,8 @@ function Hero() {
   setUser(user);}
   else
   setUser(null)
-  setIsNavOpen(true)
+
   }, [data]);
-  // console.log(user)
   
   return (
     <>
@@ -42,7 +41,7 @@ function Hero() {
             <Link to="#">
               <h2 className={classes.logo}>Elda Health</h2>
             </Link>
-            <div className={classes.listitems}>
+            <div className={classes.listitems} >
               <li className={classes.link}>
                 <a href="#services">Services</a>
               </li>
@@ -56,9 +55,11 @@ function Hero() {
                 <a href="#contact">Contact</a>
               </li>
             </div>
-            <div style={{position:"fixed",right:"-20px"}}>
+            
+          </ul>
+          <div style={{position:"fixed",right:"-20px",top:"-10px"}}>
               {user? (
-                <li style={{color:"white",fontSize:"1.5rem",display:"flex",flexDirection:"column"}}>
+                <li style={{color:"white",fontSize:"1rem",display:"flex",flexDirection:"column"}}>
                   <div>
                   Hi, {user?.username} 
                  <PersonIcon style={{margin:"1px 1px"}}/>
@@ -74,8 +75,8 @@ function Hero() {
                     style={{
                       height: "2px",
                       backgroundColor: "white",
-                      margin: "10px -5px ",
-                      width: "120%",
+                      margin: "10px 15px ",
+                      width: "100%",
                     }}
                   ></div>
                   <li className={classes.link}>
@@ -84,7 +85,6 @@ function Hero() {
                 </div>
               )}
             </div>
-          </ul>
         </header>
 
         <div className={classes.hero}>
