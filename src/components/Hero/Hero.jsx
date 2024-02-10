@@ -29,7 +29,7 @@ function Hero() {
   }
   let data = JSON.parse(localStorage.getItem("user"));
   useEffect(() => {
-    if(data.length){
+    if(data?.length){
     let user = data.find((data) => data?.isactive);
   setUser(user);}
   else
