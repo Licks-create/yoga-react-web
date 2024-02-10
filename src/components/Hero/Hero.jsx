@@ -60,7 +60,7 @@ function Hero() {
           <div style={{position:"fixed",right:"-20px",top:"-10px"}}>
               {user? (
                 <li style={{color:"white",fontSize:"1rem",display:"flex",flexDirection:"column"}}>
-                  <div>
+                  <div style={{display:"flex",alignItems:"center"}}>
                   Hi, {user?.username} 
                  <PersonIcon style={{margin:"1px 1px"}}/>
                   </div>
