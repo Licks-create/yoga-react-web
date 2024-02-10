@@ -11,6 +11,11 @@ import imp7 from "../../img/blog1.png"
 import imp8 from "../../img/blog2.png"
 import imp9 from "../../img/blog3.png"
 import imp11 from "../../img/blog1.png"
+import imp12 from "../../img/blog1.png"
+import imp13 from "../../img/blog1.png"
+import imp21 from "../../img/blog2.png"
+import imp22 from "../../img/blog2.png"
+import imp31 from "../../img/blog3.png"
 import { Link } from "react-router-dom";
 
 
@@ -112,13 +117,13 @@ function BlogFilter() {
                             category="Health"
                         />
                         <BlogPost
-                            blogImg={import("../../img/blog1.png")}
+                            blogImg={imp12}
                             blogHeading="Best Practices for meditation & relaxation..."
                             blogCopy="Mindfulness meditation originates from Buddhist teachings and is the most popular and researched form of meditation in the West."
                             category="Health"
                         />
                         <BlogPost
-                            blogImg={import("../../img/blog1.png")}
+                            blogImg={imp13}
                             blogHeading="Best Practices for meditation & relaxation..."
                             blogCopy="Mindfulness meditation originates from Buddhist teachings and is the most popular and researched form of meditation in the West."
                             category="Health"
@@ -129,19 +134,19 @@ function BlogFilter() {
                 {selectedCategory === "Yoga" && (
                     <>
                         <BlogPost
-                            blogImg={import("../../img/blog2.png")}
+                            blogImg={imp21}
                             blogHeading="Best Practices for meditation & relaxation..."
                             blogCopy="Mindfulness meditation originates from Buddhist teachings and is the most popular and researched form of meditation in the West."
                             category="Yoga"
                         />
                         <BlogPost
-                            blogImg={import("../../img/blog2.png")}
+                            blogImg={imp22}
                             blogHeading="Best Practices for meditation & relaxation..."
                             blogCopy="Mindfulness meditation originates from Buddhist teachings and is the most popular and researched form of meditation in the West."
                             category="Yoga"
                         />
                         <BlogPost
-                            blogImg={import("../../img/blog2.png")}
+                            blogImg={imp22}
                             blogHeading="Best Practices for meditation & relaxation..."
                             blogCopy="Mindfulness meditation originates from Buddhist teachings and is the most popular and researched form of meditation in the West."
                             category="Yoga"
@@ -151,19 +156,19 @@ function BlogFilter() {
                 {selectedCategory === "Welness" && (
                     <>
                         <BlogPost
-                            blogImg={import("../../img/blog3.png")}
+                            blogImg={imp31}
                             blogHeading="Best Practices for meditation & relaxation..."
                             blogCopy="Mindfulness meditation originates from Buddhist teachings and is the most popular and researched form of meditation in the West."
                             category="Welness"
                         />
                         <BlogPost
-                            blogImg={import("../../img/blog3.png")}
+                            blogImg={imp31}
                             blogHeading="Best Practices for meditation & relaxation..."
                             blogCopy="Mindfulness meditation originates from Buddhist teachings and is the most popular and researched form of meditation in the West."
                             category="Welness"
                         />
                         <BlogPost
-                            blogImg={import("../../img/blog3.png")}
+                            blogImg={imp31}
                             blogHeading="Best Practices for meditation & relaxation..."
                             blogCopy="Mindfulness meditation originates from Buddhist teachings and is the most popular and researched form of meditation in the West."
                             category="Welness"

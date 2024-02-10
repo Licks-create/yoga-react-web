@@ -8,7 +8,7 @@
     margin-bottom: 4rem;
     box-shadow: 0px 4px 4px rgba(212, 200, 248, 0.38);
     border-radius: 10px;
-    z-index: 10;
+    z-index: 1;
 }
 
 .blogPostImg {
