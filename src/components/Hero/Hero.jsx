@@ -37,9 +37,9 @@ function Hero() {
     <>
       <div className={classes.heroMain}>
         <header className={classes.header}>
+              <h2 className={classes.logo}>Elda Health</h2>
           <ul className={`${classes.links} ${isNavOpen ? classes.open : ""}`}>
             <Link to="#">
-              <h2 className={classes.logo}>Elda Health</h2>
             </Link>
             <div className={classes.listitems} >
               <li className={classes.link}>
