@@ -21,9 +21,9 @@ const Booking = ({ onClose, onBook,setBooking }) => {
     };
   
     const dialogStyles = {
-        width: '300px',
+        width: '70%',
         padding: '20px',
-        backgroundColor: '#007BFF',
+        backgroundColor: '#5f92c9',
         border: '1px solid #ccc',
         borderRadius: '8px',
         boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
