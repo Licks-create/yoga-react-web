@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
+import toast from 'react-hot-toast';
 
 
 
@@ -11,11 +12,13 @@ const Booking = ({ onClose, onBook,setBooking }) => {
     const [bookingDate, setBookingDate] = useState('');
   
     const handleBook = () => {
-      if (name && mobile && email && bookingDate) {
+      if (name && mobile && email) {
         onBook({ name, mobile, email, bookingDate });
+        toast.success("booking done")
         setBooking(false);
       } else {
-        alert('Please fill in all the fields.');
+        toast.error('Please fill in all the fields.');
+
       }
 
     };

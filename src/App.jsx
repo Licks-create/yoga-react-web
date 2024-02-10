@@ -9,10 +9,12 @@ import About from "./components/About/About";
 import BlogFilter from "./components/Blogfilter/BlogFilter";
 
 import "./index.css";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <Router>
+      <Toaster position="top-center" reverseOrder={false}/>
       <Routes>
         <Route path="/" element={<>
           <Hero/>
