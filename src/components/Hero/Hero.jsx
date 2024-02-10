@@ -4,6 +4,7 @@ import HeroImg from "../../img/pngegg (1).png";
 import { Link, useNavigate } from "react-router-dom";
 import PersonIcon from '@mui/icons-material/Person';
 import toast from "react-hot-toast";
+import Booking from "../SlotBook/Booking";
 function Hero() {
   const navigate=useNavigate()
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -104,22 +105,7 @@ function Hero() {
             </button>
           </div>
           {showForm && (
-            <div className={classes.enrollmentForm}>
-              <div className={classes.closeButton} onClick={handleClose}>
-                <span></span>
-              </div>
-              <h3 className={classes.enrollmentFormh}>Enrollment Form</h3>
-              <form className={classes.threeForm}>
-                <input
-                  type="text"
-                  placeholder="Enter your email here"
-                  className={classes.aboutFormInput}
-                />
-                <button type="submit" className={classes.aboutFormButton}>
-                  Submit
-                </button>
-              </form>
-            </div>
+            <Booking setBooking={setShowForm}/>
           )}
           <div className={classes.heroImg}>
             <img src={HeroImg} alt="" className={classes.heroImgImg} />
