@@ -8,15 +8,11 @@ import Booking from "../SlotBook/Booking";
 function Hero() {
   const navigate=useNavigate()
   const [isNavOpen, setIsNavOpen] = useState(false);
-  console.log(localStorage.getItem("user"));
+  // console.log(localStorage.getItem("user"));
 
   const [showForm, setShowForm] = useState(false);
   const [user, setUser] = useState(null);
   const handleEnrollClick = () => setShowForm(true);
-  const handleClose = () => {
-    setShowForm(false);
-    setIsNavOpen(!isNavOpen);
-  };
 
   const logout=()=>{
     
@@ -34,8 +30,9 @@ function Hero() {
   setUser(user);}
   else
   setUser(null)
+  setIsNavOpen(true)
   }, [data]);
-  console.log(user)
+  // console.log(user)
   
   return (
     <>
