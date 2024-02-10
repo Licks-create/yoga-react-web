@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import toast from 'react-hot-toast';
+import styles from './Booking.module.css'
 
 
 
@@ -23,82 +24,33 @@ const Booking = ({ onClose, onBook,setBooking }) => {
 
     };
   
-    const dialogStyles = {
-        width: '70%',
-        padding: '20px',
-        backgroundColor: '#5f92c9',
-        border: '1px solid #ccc',
-        borderRadius: '8px',
-        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
-        position: 'fixed',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        zIndex:"20000"
-    };
-  
-    const headingStyles = {
-      fontSize: '1.5rem',
-      marginBottom: '15px',
-    };
-  
-    const labelStyles = {
-      display: 'block',
-      marginBottom: '10px',
-    };
-  
-    const inputStyles = {
-      width: '100%',
-      padding: '8px',
-      border: '1px solid #ccc',
-      borderRadius: '4px',
-      boxSizing: 'border-box',
-      marginTop: '5px',
-    };
-  
-    const buttonsContainerStyles = {
-      marginTop: '20px',
-      display: 'flex',
-      justifyContent: 'space-between',
-    };
-  
-    const buttonStyles = {
-      padding: '10px',
-      cursor: 'pointer',
-      backgroundColor: '#007bff',
-      color: '#fff',
-      border: 'none',
-      borderRadius: '4px',
-    };
-  
-    const buttonHoverStyles = {
-      backgroundColor: '#0056b3',
-    };
+    
   
     return (
-      <div style={dialogStyles}>
-        <h2 style={headingStyles}>Book Yoga Class</h2>
-        <label style={labelStyles}>
+        <div className={styles.dialog}>
+        <h2 className={styles.heading}>Book Yoga Class</h2>
+        <label className={styles.label}>
           Name:
-          <input type="text" style={inputStyles} value={name} onChange={(e) => setName(e.target.value)} />
+          <input type="text" className={styles.input} value={name} onChange={(e) => setName(e.target.value)} />
         </label>
-        <label style={labelStyles}>
+        <label className={styles.label}>
           Mobile Number:
-          <input type="text" style={inputStyles} value={mobile} onChange={(e) => setMobile(e.target.value)} />
+          <input type="text" className={styles.input} value={mobile} onChange={(e) => setMobile(e.target.value)} />
         </label>
-        <label style={labelStyles}>
+        <label className={styles.label}>
           Email:
-          <input type="text" style={inputStyles} value={email} onChange={(e) => setEmail(e.target.value)} />
+          <input type="text" className={styles.input} value={email} onChange={(e) => setEmail(e.target.value)} />
         </label>
-        <label style={labelStyles}>
+        <label className={styles.label}>
           Booking Date:
-          <input type="date" style={inputStyles} value={bookingDate} onChange={(e) => setBookingDate(e.target.value)} />
+          <input type="date" className={styles.input} value={bookingDate} onChange={(e) => setBookingDate(e.target.value)} />
         </label>
-        <div style={buttonsContainerStyles}>
-          <button style={buttonStyles} onClick={()=>setBooking(false)}>Cancel</button>
-          <button style={{ ...buttonStyles, ...buttonHoverStyles }} onClick={handleBook}>Book Now</button>
+        <div className={styles.buttonsContainer}>
+          <button className={styles.button} onClick={() => setBooking(false)}>Cancel</button>
+          <button className={`${styles.button} ${styles.buttonHover}`} onClick={handleBook}>Book Now</button>
         </div>
       </div>
+      
     );
   };
 
